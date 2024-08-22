@@ -38,7 +38,7 @@ describe("update score", () => {
         cy.get("#player-scores").should("contain", "tom: 1");
     });
 
-    it.skip("should decrease a player's score", () => {
+    it("should decrease a player's score", () => {
         // AND tom has a score of 0
         cy.get("#player-scores").should("contain", "tom: 0");
 
@@ -50,6 +50,6 @@ describe("update score", () => {
             .click();
 
         // THEN 'tom's score should be -1
-        cy.get("#player-scores").should("contain", "tom: 0");
+        cy.get("#player-scores").should("contain", "tom: -1");
     });
 });
