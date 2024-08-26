@@ -5,10 +5,6 @@ import javax.enterprise.context.ApplicationScoped;
 @ApplicationScoped
 public final class Identity implements Operation {
 
-    public Identity() {
-        super();
-    }
-
     @Override
     public Float apply(final String equation) {
         try {
