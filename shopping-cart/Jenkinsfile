@@ -27,7 +27,6 @@ pipeline {
                         -p '{"spec": {"template": {"metadata": {"labels": {"build": "build-${BUILD_NUMBER}"}}}}}' \
                         -n ${APP_NAMESPACE}
                     """
-}
                 }
             }
         }
@@ -46,3 +45,4 @@ pipeline {
             }
         }
     }
+}
